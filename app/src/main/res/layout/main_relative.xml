@@ -1,6 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</LinearLayout>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="186dp"
+        android:layout_height="171dp"
+        android:layout_above="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@mipmap/imc"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="322dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Digite seu peso (ex: 80,5)"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="102dp"
+        tools:layout_editor_absoluteY="76dp"
+        android:layout_centerInParent="true"
+        />
+
+    <EditText
+        android:id="@+id/textAltura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Digite sua altura (ex: 1,89)"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="248dp"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"/>
+
+
+    <Button
+        android:id="@+id/buttonCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#8BC34A"
+        android:text="Calcular"
+        android:textColor="#FFFFFF"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="143dp"
+        android:layout_below="@+id/textAltura"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
