@@ -8,21 +8,20 @@
 
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/pesoEDT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-
         android:hint="Digite seu peso (ex: 80,5)"
         android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        
 
-         />
+
+        app:layout_constraintTop_toTopOf="parent" />
     <EditText
-        android:id="@+id/textAltura"
+        android:id="@+id/alturaEDT"
        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -31,7 +30,7 @@
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/pesoEDT" />
 
 
     <Button
@@ -44,6 +43,20 @@
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textAltura" />
+        app:layout_constraintTop_toBottomOf="@+id/alturaEDT" />
+
+    <TextView
+        android:id="@+id/imcText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="IMC"
+        android:textAlignment="center"
+        android:textColor="#4CAF50"
+        android:textSize="56sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/pesoEDT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

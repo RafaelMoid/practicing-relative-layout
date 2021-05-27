@@ -10,7 +10,7 @@
         android:id="@+id/imageView"
         android:layout_width="186dp"
         android:layout_height="171dp"
-        android:layout_above="@+id/editText"
+        android:layout_above="@+id/pesoEDT"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="20dp"
         app:srcCompat="@mipmap/imc"
@@ -18,7 +18,7 @@
         tools:layout_editor_absoluteY="322dp" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/pesoEDT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -30,7 +30,7 @@
         />
 
     <EditText
-        android:id="@+id/textAltura"
+        android:id="@+id/alturaEDT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -38,7 +38,7 @@
         android:inputType="numberDecimal"
         tools:layout_editor_absoluteX="104dp"
         tools:layout_editor_absoluteY="248dp"
-        android:layout_below="@+id/editText"
+        android:layout_below="@+id/pesoEDT"
         android:layout_centerHorizontal="true"/>
 
 
@@ -51,7 +51,7 @@
         android:textColor="#FFFFFF"
         tools:layout_editor_absoluteX="159dp"
         tools:layout_editor_absoluteY="143dp"
-        android:layout_below="@+id/textAltura"
+        android:layout_below="@+id/alturaEDT"
         android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>
